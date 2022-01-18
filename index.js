@@ -10,6 +10,8 @@ const marketingRouter = require("./routes/marketing");
 const dataRouter = require("./routes/data");
 
 
+app.use(express.json());
+
 app.use("/", indexRouter);
 
 app.use("/Accounting", accountingRouter);
